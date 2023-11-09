@@ -1,0 +1,88 @@
+.andrology-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+    url("https://static.wixstatic.com/media/11062b_1f500790666b41f1a11f751a560fc6b9~mv2.jpg/v1/fill/w_1225,h_1125,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_1f500790666b41f1a11f751a560fc6b9~mv2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center center;
+  background-attachment: fixed;
+}
+
+.andrology-title {
+  width: 100%;
+  background-color: #caab77;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 15px;
+}
+
+.andrology-contain {
+  margin: 50px 250px 0;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .andrology-contain {
+    margin: 50px 0px 0;
+  }
+  .andrology-contain .col {
+    margin-bottom: 0px;
+  }
+}
+.andrology-contain .col {
+  margin-bottom: 80px;
+}
+
+.andrology-text {
+  margin-bottom: 80px;
+  text-align: left;
+  padding: 20px 50px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .andrology-text {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    color: white;
+  }
+}
+
+.andrology-text h2::after {
+  content: "";
+  display: inherit;
+  width: 40px;
+  margin: 20px 0;
+  border-top: 4px solid #caab77;
+}
+
+.andrology-text p {
+  font-size: 18px;
+}
+
+.andrology-text .andrology-btn {
+  background-color: transparent;
+  border: 1px solid #caab77;
+  padding: 25px 100px;
+  margin-top: 50px;
+  transition: all 0.7s ease-in-out;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .andrology-text .andrology-btn {
+    padding: 20px 75px;
+  }
+}
+@media (max-width: 767px) {
+  .andrology-text .andrology-btn {
+    padding: 15px 30px;
+    margin: 30px 10px;
+  }
+}
+
+.andrology-text .andrology-btn:hover {
+  background-color: #caab77;
+}

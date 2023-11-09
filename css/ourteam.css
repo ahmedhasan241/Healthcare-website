@@ -1,0 +1,91 @@
+.team-section {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://static.wixstatic.com/media/2e87f1_83cbf90ed3fc4d85843b8566bee8145e~mv2.png/v1/fill/w_1244,h_995,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/2e87f1_83cbf90ed3fc4d85843b8566bee8145e~mv2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.team-title {
+  width: 100%;
+  background-color: #caab77;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.team-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.team-content p {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.team-content-title::after {
+  content: "";
+  border-bottom: 4px solid #caab77;
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+}
+
+.team-info {
+  width: 63%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .team-content {
+    width: 95%;
+    text-align: center;
+  }
+  .team-content p {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .team-info {
+    width: 95%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.team-card {
+  transition: all 1s ease-in-out;
+}
+.card-img-overlay {
+  transition: all 1s ease-in-out;
+}
+
+.team-info h3::after {
+  content: "";
+  border-bottom: 3px solid #caab77;
+  margin: 20px auto 20px;
+  width: 50px;
+  display: block;
+}
+.team-btn {
+  font-size: 20px;
+  height: 50px;
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.team-card:hover .team-btn {
+  display: block;
+  opacity: 1;
+}

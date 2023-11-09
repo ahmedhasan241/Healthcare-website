@@ -1,0 +1,101 @@
+.aesthetic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.485), rgb(0, 0, 0, 0.485)),
+    url("https://static.wixstatic.com/media/7bca2a9c81734484bebfe3e86c205d74.jpg/v1/fill/w_906,h_832,al_c,q_85,enc_auto/7bca2a9c81734484bebfe3e86c205d74.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center center;
+  background-attachment: fixed;
+}
+
+.aesthetic-contain {
+  width: 57%;
+  margin: 0 auto;
+  color: white;
+}
+
+.aesthetic-contain h2::after {
+  content: "";
+  border-bottom: 5px solid #caab77;
+  margin: 20px 0 20px;
+  width: 60px;
+  display: block;
+}
+
+.aesthetic-cards {
+  width: 65%;
+}
+@media (max-width: 991px) {
+  .aesthetic-cards {
+    width: 80%;
+  }
+  .aesthetic-contain {
+    width: 80%;
+    text-align: center;
+  }
+  .aesthetic-contain h2::after {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 768px) {
+  .aesthetic-cards {
+    width: 95%;
+  }
+  .aesthetic-contain {
+    width: 95%;
+    text-align: center;
+  }
+  .aesthetic-contain h2::after {
+    margin: 20px auto;
+  }
+}
+
+.card-img-overlay .clinic-btn {
+  cursor: pointer;
+  text-align: center;
+  width: 85%;
+  padding: 5px 0;
+  border-radius: 0px;
+  margin-bottom: 5%;
+  color: black;
+  border: 2.5px solid black;
+  background-color: rgba(255, 255, 255, 0.621);
+  transition: all 0.3s ease-in-out;
+  z-index: 50;
+}
+.card-img-overlay .clinic-btn:hover {
+  background-color: rgba(255, 255, 255);
+}
+.card-img-overlay .clinic-btn:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .clinic-surgery {
+    width: 90%;
+  }
+}
+
+.clinic-surgery img {
+  height: 50vh;
+}
+@media (max-width: 410px) {
+  .card-img-overlay button {
+    font-size: 9px;
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .clinic-overlay h4 {
+    letter-spacing: 0.2em;
+  }
+  .clinic-surgery img {
+    height: 30vh;
+  }
+  .clinic-section {
+    height: 80vh;
+  }
+}
