@@ -1,0 +1,207 @@
+.plastic-surgery,
+.second-plastic-contain {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
+    url("https://static.wixstatic.com/media/2e87f1_599b5f48926848969855c46346730855~mv2.png/v1/fill/w_1235,h_1080,al_c,q_90,enc_auto/2e87f1_599b5f48926848969855c46346730855~mv2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center center;
+  background-attachment: fixed;
+}
+
+.plastic-surgery-title {
+  width: 100%;
+  background-color: #caab77;
+  padding: 8px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+}
+
+.plastic-header h2::after {
+  content: "";
+  border-bottom: 5px solid #caab77;
+  margin: 28px 0 28px;
+  width: 55px;
+  display: block;
+}
+
+.plastic-header p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.plastic-header,
+.first-plastic-section,
+.second-plastic-section {
+  width: 62%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .plastic-header,
+  .first-plastic-section,
+  .second-plastic-section {
+    width: 75%;
+  }
+}
+@media (max-width: 991px) {
+  .plastic-header,
+  .first-plastic-section,
+  .second-plastic-section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .plastic-header h2::after {
+    margin: 28px auto 28px;
+  }
+  .plastic-header,
+  .first-plastic-section {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .plastic-surgery-title {
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+  .plastic-header,
+  .first-plastic-section,
+  .second-plastic-section {
+    width: 97%;
+  }
+  .plastic-header p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+  .plastic-header h2 {
+    font-size: 18px;
+  }
+}
+
+.first-plastic-title,
+.second-plastic-title {
+  margin-left: 55px;
+  padding-top: 85px;
+  font-size: 100px;
+  color: #caab77;
+}
+
+.first-plastic-section p,
+.second-plastic-section p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  color: white;
+  margin-top: 28px;
+}
+.second-plastic-cards img {
+  width: 100%;
+}
+
+.first-plastic-cards,
+.second-plastic-cards {
+  width: 90%;
+}
+
+.second-plastic-cards .card {
+  padding: 0px;
+}
+@media (max-width: 991px) {
+  .first-plastic-cards,
+  .second-plastic-cards {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .first-plastic-cards,
+  .second-plastic-cards {
+    width: 100%;
+  }
+}
+
+.card-img-overlay .first-plastic-btn,
+.card-img-overlay .second-plastic-btn {
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 0px;
+  border-radius: 0px;
+  margin-bottom: 5%;
+  color: black;
+  border: 2.5px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+  z-index: 50;
+}
+.card-img-overlay .first-plastic-btn:hover,
+.card-img-overlay .second-plastic-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-img-overlay .first-plastic-btn .btn,
+.card-img-overlay .second-plastic-btn .btn {
+  padding: 0px 0px;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .card-img-overlay .first-plastic-btn,
+  .card-img-overlay .second-plastic-btn {
+    padding: 2px 0px;
+    width: 100%;
+    font-size: 6px;
+  }
+  .card-img-overlay .first-plastic-btn .btn,
+  .card-img-overlay .second-plastic-btn .btn {
+    padding: 0px 0px;
+    width: 100%;
+    font-size: 6px;
+  }
+}
+@media (max-width: 1141px) {
+  .card-img-overlay .first-plastic-btn .btn,
+  .card-img-overlay .second-plastic-btn .btn {
+    font-size: 11px;
+    padding: 0px 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-overlay .first-plastic-btn,
+  .card-img-overlay .second-plastic-btn {
+    padding: 5px 0px;
+    width: 100%;
+    font-size: 9px;
+  }
+  .card-img-overlay .first-plastic-btn .btn,
+  .card-img-overlay .second-plastic-btn .btn {
+    padding: 5px 0px;
+    width: 100%;
+    font-size: 9px;
+  }
+}
+@media (max-width: 991px) {
+  .card-img-overlay .first-plastic-btn,
+  .card-img-overlay .second-plastic-btn {
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 11px;
+  }
+  .card-img-overlay .first-plastic-btn .btn,
+  .card-img-overlay .second-plastic-btn .btn {
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 11px;
+  }
+}

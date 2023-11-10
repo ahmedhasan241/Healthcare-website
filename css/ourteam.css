@@ -62,10 +62,7 @@
   }
 }
 .team-card {
-  transition: all 1s ease-in-out;
-}
-.card-img-overlay {
-  transition: all 1s ease-in-out;
+  overflow: hidden;
 }
 
 .team-info h3::after {
@@ -81,11 +78,29 @@
   background-color: transparent;
   border: 0px;
   color: white;
-  display: none;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+.team-card .card-img-overlay {
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  transform: translateY(0px);
+  transition: all 0.3s ease-in-out;
+}
+.team-card:hover .card-img-overlay {
+  transform: translateY(15px);
+}
+
 .team-card:hover .team-btn {
-  display: block;
   opacity: 1;
+}
+@media (min-width: 1199px) {
+  .team-card .card-img-overlay {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    transform: translateY(60px);
+    transition: all 0.3s ease-in-out;
+  }
 }
