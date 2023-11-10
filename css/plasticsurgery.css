@@ -154,26 +154,26 @@
   font-size: 14px;
 }
 
-@media (max-width: 500px) {
-  .card-img-overlay .first-plastic-btn,
-  .card-img-overlay .second-plastic-btn {
-    padding: 2px 0px;
-    width: 100%;
-    font-size: 6px;
-  }
-  .card-img-overlay .first-plastic-btn .btn,
-  .card-img-overlay .second-plastic-btn .btn {
-    padding: 0px 0px;
-    width: 100%;
-    font-size: 6px;
-  }
-}
 @media (max-width: 1141px) {
   .card-img-overlay .first-plastic-btn .btn,
   .card-img-overlay .second-plastic-btn .btn {
     font-size: 11px;
     padding: 0px 0px;
     width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .card-img-overlay .first-plastic-btn,
+  .card-img-overlay .second-plastic-btn {
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 11px;
+  }
+  .card-img-overlay .first-plastic-btn .btn,
+  .card-img-overlay .second-plastic-btn .btn {
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 11px;
   }
 }
 
@@ -191,17 +191,17 @@
     font-size: 9px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 500px) {
   .card-img-overlay .first-plastic-btn,
   .card-img-overlay .second-plastic-btn {
-    padding: 8px 0px;
-    width: 100%;
-    font-size: 11px;
+    padding: 5px 0px;
+    width: 80%;
+    font-size: 6px;
   }
   .card-img-overlay .first-plastic-btn .btn,
   .card-img-overlay .second-plastic-btn .btn {
-    padding: 8px 0px;
+    padding: 5px 0px;
     width: 100%;
-    font-size: 11px;
+    font-size: 6px;
   }
 }
