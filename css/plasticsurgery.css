@@ -87,9 +87,10 @@
 }
 
 .first-plastic-title,
-.second-plastic-title {
+.second-plastic-title,
+.third-plastic-title {
   margin-left: 55px;
-  padding-top: 85px;
+  padding-top: 80px;
   font-size: 100px;
   color: #caab77;
 }
@@ -194,14 +195,14 @@
 @media (max-width: 500px) {
   .card-img-overlay .first-plastic-btn,
   .card-img-overlay .second-plastic-btn {
-    padding: 5px 0px;
-    width: 80%;
-    font-size: 6px;
+    padding: 3px 0px;
+    width: 100%;
+    font-size: 9px;
   }
   .card-img-overlay .first-plastic-btn .btn,
   .card-img-overlay .second-plastic-btn .btn {
-    padding: 5px 0px;
+    padding: 3px 0px;
     width: 100%;
-    font-size: 6px;
+    font-size: 8.5px;
   }
 }
