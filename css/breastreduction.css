@@ -1,0 +1,156 @@
+.breast-section {
+  background-color: white;
+}
+
+.breast-title {
+  width: 100%;
+  background-color: #caab77;
+  padding: 65px 0;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 9px;
+}
+
+.breast-contain {
+  margin: 100px auto 0;
+  text-align: center;
+  width: 68%;
+  position: relative;
+}
+.breast-link {
+  position: absolute;
+  top: -45px;
+  right: -120px;
+}
+
+@media (max-width: 1200px) {
+  .breast-link {
+    display: none;
+  }
+}
+.message-icon {
+  display: none;
+}
+.link-icon:hover .x-icon {
+  display: none;
+}
+.link-icon:hover .message-icon {
+  display: inline-flex;
+}
+.breast-contain .col {
+  margin-bottom: 80px;
+}
+
+.breast-text {
+  margin-bottom: 80px;
+  text-align: left;
+  padding: 20px 50px;
+  color: black;
+}
+.breast-text h3 {
+  letter-spacing: 8px;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 37px;
+}
+
+.breast-text h3::after {
+  content: "";
+  display: inherit;
+  width: 40px;
+  margin: 35px 0;
+  border-top: 4px solid #caab77;
+}
+
+.breast-text p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.breast-text .breast-btn {
+  background-color: black;
+  padding: 25px 100px;
+  margin-top: 50px;
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+
+.breast-text .breast-btn:hover {
+  background-color: #caab77;
+}
+
+@media (max-width: 1250px) {
+  .breast-contain {
+    margin: 50px auto 0;
+    text-align: center;
+    width: 80%;
+  }
+  .breast-text .breast-btn {
+    padding: 25px 50px;
+    margin-top: 10px;
+  }
+  .breast-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .breast-text {
+    text-align: center;
+  }
+  .breast-contain {
+    margin: 50px auto 0;
+    width: 85%;
+  }
+  .breast-contain .col {
+    margin-bottom: 0px;
+  }
+  .breast-text .breast-btn {
+    padding: 20px 50px;
+  }
+  .breast-text h3::after {
+    content: "";
+    display: inherit;
+    width: 40px;
+    margin: 20px auto;
+    border-top: 4px solid #caab77;
+  }
+}
+@media (max-width: 767px) {
+  .breast-text .breast-btn {
+    padding: 15px 30px;
+    margin: 30px 10px;
+  }
+  .breast-text {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 0px 0px;
+    color: black;
+  }
+  .breast-text p {
+    font-size: 13px;
+  }
+  .breast-contain img {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 518px) {
+  .breast-title {
+    width: 100%;
+    background-color: #caab77;
+    padding: 5px 0;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .breast-text h3 {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 37px;
+    margin-inline: auto;
+  }
+}
