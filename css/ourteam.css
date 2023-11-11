@@ -157,6 +157,15 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+}
+
+.side-nav::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 .side-nav .closebtn {
