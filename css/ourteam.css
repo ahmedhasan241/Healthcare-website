@@ -62,26 +62,11 @@
   }
 }
 
-.info-body {
-  transform: translateY(60px);
-  transition: all 0.5s ease-in-out;
-}
 .team-card {
   overflow: hidden;
 }
 .team-card p {
   font-size: 19px;
-}
-.btn-read {
-  width: 100%;
-  padding: 5px 0;
-  background-color: transparent;
-  border: 0;
-  color: white;
-  font-size: 22px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  padding-right: 30px;
 }
 
 .first-card:hover .btn-read {
@@ -98,44 +83,12 @@
   width: 50px;
   display: block;
 }
-.team-btn {
-  font-size: 20px;
-  height: 50px;
-  background-color: transparent;
-  border: 0px;
-  color: white;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.team-card .card-img-overlay {
-  padding: 0px;
-  margin: 0;
-  width: 100%;
-  transform: translateY(0px);
-  transition: all 0.3s ease-in-out;
-}
-.team-card:hover .card-img-overlay {
-  transform: translateY(15px);
-}
-
-.team-card:hover .team-btn {
-  opacity: 1;
-}
-@media (min-width: 1199px) {
-  .team-card .card-img-overlay {
-    padding: 0px;
-    margin: 0;
-    width: 100%;
-    transform: translateY(60px);
-    transition: all 0.3s ease-in-out;
-  }
-}
 
 .first-card .card-body {
   margin-top: -110px;
   z-index: 100;
   background-color: black;
-  height: 205px;
+  height: 220px;
 }
 
 #myCanvas h2 {
@@ -144,8 +97,8 @@
 
 @media (min-width: 992px) {
   .info-body {
-    transform: translateY(60px);
-    transition: all 0.5s ease-in-out;
+    transform: translateY(55px);
+    transition: all 0.3s ease-in-out;
   }
   .team-card {
     overflow: hidden;
@@ -160,9 +113,10 @@
     background-color: transparent;
     border: 0;
     color: white;
+    align-self: flex-end;
     font-size: 22px;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     padding-right: 30px;
   }
 
@@ -181,5 +135,135 @@
 
   .team-card p {
     font-size: 15px;
+  }
+  .first-card .card-body {
+    height: 170px;
+  }
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.522);
+  z-index: 9000;
+  display: none;
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  color: black !important;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav .closebtn {
+  position: absolute;
+  text-decoration: none;
+  top: -20px;
+  right: 100px;
+  color: black;
+  font-size: 100px;
+  font-weight: 100;
+  margin-left: 50px;
+}
+.show-nav {
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .show-nav {
+    width: 95%;
+  }
+}
+.headcanvas {
+  font-size: 100px;
+}
+@media screen and (max-height: 450px) {
+  .side-nav {
+    padding-top: 15px;
+  }
+  .side-nav .closebtn {
+    font-size: 18px;
+  }
+}
+.information {
+  text-align: start;
+}
+
+.information span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.information span h2 {
+  color: #caab77;
+  margin-right: 50px;
+}
+.information h4 {
+  color: #caab77;
+}
+
+@media (max-width: 800px) {
+  .information span {
+    flex-direction: column;
+  }
+}
+
+#myCanvas {
+  text-align: start;
+  padding: 20px 320px 5px 80px;
+}
+
+#myCanvas span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#myCanvas span h2 {
+  color: #caab77;
+  margin-right: 40px;
+}
+#myCanvas h4 {
+  color: #caab77;
+  font-size: 19px;
+}
+#myCanvas p {
+  margin: 0px;
+}
+#myCanvas strong {
+  margin: 0;
+  display: block;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  #myCanvas span {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .side-nav .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 0px;
+    right: 25px;
+    color: black;
+    font-size: 50px;
+    font-weight: 100;
+    margin-left: 50px;
+  }
+
+  #myCanvas {
+    text-align: start;
+    padding: 10px 0px 5px 10px;
+  }
+  .information span h2 {
+    color: #caab77;
+    margin-right: 5px;
   }
 }
