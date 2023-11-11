@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .nav-link {
   color: rgb(202, 171, 119);
   font-size: 14px;
@@ -197,19 +200,7 @@
   width: 100%;
   overflow: hidden;
 }
-.hero-video i {
-  position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-}
 
-@media (max-width: 992px) {
-  .hero-video i {
-    display: none;
-  }
-}
 .hero-video video {
   width: 100%;
   background-size: cover;
@@ -222,7 +213,7 @@
 .hero-video .overlay-content {
   position: absolute;
   z-index: 10;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -234,7 +225,7 @@
 .hero-video .book-btn {
   position: absolute;
   z-index: 10;
-  bottom: 12%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -260,6 +251,63 @@
   color: black;
 }
 
+.hero-video i {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+@media (max-width: 992px) {
+  .hero-video i {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .hero-video .book-btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 767px) {
+  .hero-video i {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .hero-video .book-btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 500px) {
+  .hero-video i {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .hero-video .book-btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* End Hero Section  */
 .stay-section {
   width: 60%;
   align-self: center;
@@ -423,6 +471,16 @@
   height: 600px;
   background-color: black;
 }
+.titles-contain .title-name {
+  color: rgb(202, 171, 119);
+}
+.titles-contain .title-name::after {
+  content: "";
+  border-bottom: 6px solid rgb(202, 171, 119);
+  margin-top: 20px;
+  width: 70px;
+  display: block;
+}
 .about-contain .overlay {
   z-index: 10;
   position: absolute;
@@ -462,16 +520,6 @@
   .about-contain video {
     display: none;
   }
-}
-.about-contain .about-title {
-  color: rgb(202, 171, 119);
-}
-.about-contain .about-title::after {
-  content: "";
-  border-bottom: 6px solid rgb(202, 171, 119);
-  margin-top: 20px;
-  width: 70px;
-  display: block;
 }
 
 /* End About  */
@@ -524,13 +572,14 @@
 .contact-form button {
   margin: 15px auto;
   background-color: white;
-  border: 5px solid #eddec4;
-  padding: 15px 75px;
+  border: 5px solid #caab77;
+  padding: 10px 100px;
   font-weight: 600;
   transition: all 0.5s ease;
 }
 .contact-form button:hover {
-  background-color: #eddec4;
+  background-color: #caab77;
+  border: 5px solid #caab77;
 }
 
 /* Slider  */
