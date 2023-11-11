@@ -34,25 +34,25 @@
   <body class="bg-black">
     <!-- Nav Bar  -->
     <div class="d-none d-lg-block">
-      <nav style="border-top: 1px inset rgb(202, 171, 119)" class="mt-2">
+      <nav style="border-top: 1px inset rgb(202, 171, 119)" class="mt-2 d-flex">
+        <div class="drop-down h-75 my-auto">
+          <div class="wrapper">
+            <img src="/images/USA.png" alt="" class="selectedImg" />
+          </div>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+          <div class="list">
+            <div class="item">
+              <img src="/images/USA.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="/images/ARE.png" alt="" />
+            </div>
+          </div>
+        </div>
         <ul
           class="nav bg-black justify-content-center align-items-center d-none d-lg-flex"
           style="height: 65px"
         >
-          <div class="drop-down">
-            <div class="wrapper">
-              <img src="/images/USA.png" alt="" class="selectedImg" />
-            </div>
-            <i class="fa-solid fa-chevron-down arrow"></i>
-            <div class="list">
-              <div class="item">
-                <img src="/images/USA.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="/images/ARE.png" alt="" />
-              </div>
-            </div>
-          </div>
           <li class="nav-item">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
@@ -365,10 +365,10 @@
 
     <!-- Footer  -->
     <footer class="text-center border-top border-light pt-5">
-      <h6 style="color: rgb(202, 171, 119); letter-spacing: 10px" class="mb-5">
+      <h6 style="color: rgb(202, 171, 119); letter-spacing: 8px" class="mb-4">
         CONTACT US
       </h6>
-      <div class="container text-center">
+      <div class="container text-center contact-info">
         <div class="row">
           <div class="text-white col-12 col-md-6 col-lg-3">
             <h2 class="footer-header">LOCATIONS</h2>
@@ -384,7 +384,9 @@
           </div>
           <div class="text-white col-12 col-md-6 col-lg-3">
             <h2 class="footer-header">HOURS</h2>
-            <p class="my-4">Saturday-Thursday: 10am-9pm <br />Friday: Closed</p>
+            <p class="my-4">
+              Saturday-Thursday: <br />10am-9pm <br />Friday: <br />Closed
+            </p>
           </div>
           <div class="text-white col-12 col-md-6 col-lg-3">
             <h2 class="footer-header">E-MAIL</h2>
