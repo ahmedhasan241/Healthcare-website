@@ -710,3 +710,9 @@ html {
 .video-contain:hover .video-slide {
   display: block;
 }
+
+.whatspp-icon {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
