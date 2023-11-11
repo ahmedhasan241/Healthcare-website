@@ -448,10 +448,10 @@
     display: none;
   }
 }
-.about-contain .card-title {
+.about-contain .about-title {
   color: rgb(202, 171, 119);
 }
-.about-contain .card-title::after {
+.about-contain .about-title::after {
   content: "";
   border-bottom: 6px solid rgb(202, 171, 119);
   margin-top: 20px;

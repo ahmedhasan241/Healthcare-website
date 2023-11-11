@@ -39,7 +39,7 @@
 }
 
 .team-info {
-  width: 63%;
+  width: 68%;
   align-items: center;
   text-align: center;
   margin: 0 auto;
@@ -61,11 +61,37 @@
     margin: 0 auto;
   }
 }
+
+.info-body {
+  transform: translateY(60px);
+  transition: all 0.5s ease-in-out;
+}
 .team-card {
   overflow: hidden;
 }
+.team-card p {
+  font-size: 19px;
+}
+.btn-read {
+  width: 100%;
+  padding: 5px 0;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  padding-right: 30px;
+}
 
-.team-info h3::after {
+.first-card:hover .btn-read {
+  opacity: 1;
+}
+.first-card:hover .info-body {
+  transform: translateY(0);
+}
+
+.team-info .title-info::after {
   content: "";
   border-bottom: 3px solid #caab77;
   margin: 20px auto 20px;
@@ -102,5 +128,58 @@
     width: 100%;
     transform: translateY(60px);
     transition: all 0.3s ease-in-out;
+  }
+}
+
+.first-card .card-body {
+  margin-top: -110px;
+  z-index: 100;
+  background-color: black;
+  height: 205px;
+}
+
+#myCanvas h2 {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  .info-body {
+    transform: translateY(60px);
+    transition: all 0.5s ease-in-out;
+  }
+  .team-card {
+    overflow: hidden;
+  }
+  .team-card p {
+    font-size: 19px;
+    margin-bottom: auto !important;
+  }
+  .btn-read {
+    width: 100%;
+    padding: 5px 0;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    padding-right: 30px;
+  }
+
+  .first-card:hover .btn-read {
+    opacity: 1;
+  }
+  .first-card:hover .info-body {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .info-body {
+    transform: translateY(0px);
+  }
+
+  .team-card p {
+    font-size: 15px;
   }
 }

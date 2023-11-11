@@ -1,0 +1,13 @@
+.appointment-section {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+}
+.appointment-section .video {
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+  width: 100%;
+}
