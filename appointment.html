@@ -26,11 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/appointment.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Book An Appointment | Dr. Firas Hamdan | Highness Clinic In Dubai</title>
     <script src="js/script.js" defer></script>
-    <title>
-      Book An Appointment | Dr. Firas Hamdan | Highness Clinic In Dubai
-    </title>
   </head>
   <body class="bg-black">
     <!-- Nav Bar  -->
@@ -55,7 +54,7 @@
           style="height: 65px"
         >
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ourteam.html">OUR TEAM</a>
@@ -75,7 +74,7 @@
             </div>
           </li>
           <li class="nav-item aesthetics-link">
-            <a class="nav-link" href="aesthetic.html">AESTHETICS</a>
+            <a class="nav-link " href="aesthetic.html">AESTHETICS</a>
             <div class="aesthetics-list">
               <div class="aesthetics-item text-center">
                 <a href="aesthetic.html"> AESTHETIC DERMATOLOGY</a>
@@ -104,7 +103,7 @@
             <a class="nav-link" href="about.html">HAIR TRANSPLANT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link appointment-nav-link" href="appointment.html"
+            <a class="nav-link appointment-nav-link text-white" href="appointment.html"
               >CONTACTS</a
             >
             <!-- <div class="appointment-nav-list">
@@ -232,16 +231,147 @@
       </div>
     </nav>
     <!-- End Nav  -->
+
+    <!-- Aesthetic Section  -->
     <div class="appointment-section">
-      <div class="video">
-        <video autoplay loop muted width="100%">
-          <source
-            src="https://video.wixstatic.com/video/11062b_586a865a66cc45499be4336bc4dcfa2a/1080p/mp4/file.mp4"
-            type="video/mp4"
-          />
-        </video>
+      <div class="appointment-header">
+        <div class="header-contain">
+          <h6>REQUEST AN APPOINTMENT</h6>
+          <p class="mx-0 mx-sm-4">
+            Requesting an appointment is easy. Simply provide your information
+            in the form below and we will contact you within 24 hours.
+          </p>
+        </div>
+      </div>
+      <div class="appointment-contain p-2 px-sm-5 py-sm-4">
+        <p class="mb-4 mb-md-5">Enter Your Information</p>
+        <form
+          action=""
+          class="appointment-form mt-1 mt-md-2 mx-auto text-white"
+        >
+          <div class="row row-cols-1 row-cols-md-2 mb-0 mb-md-4">
+            <div class="col mb-3">
+              <label for="fullNameInput" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Eg , Kat"
+                id="fullNameInput"
+                required="required"
+              />
+            </div>
+            <div class="col number-selection mb-3">
+              <label for="selectBox" class="form-label">Contact Number *</label>
+              <select
+                class="form-select number-select rounded-0"
+                aria-label="Default select example"
+                id="selectBox"
+                required="required"
+              >
+                <option
+                  class="fs-5 my-2"
+                  id="selectBox"
+                  value="default"
+                  selected
+                >
+                  Choose an option
+                </option>
+                <option class="fs-5 my-2" id="selectBox" value="UAE">
+                  United Arab Emirates
+                </option>
+                <option class="fs-5 my-2" id="selectBox" value="INTER">
+                  International
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 mb-0 mb-md-4">
+            <div class="col mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control border-0"
+                placeholder="Eg , mail@example.com"
+                id="emailInput"
+                aria-describedby="emailHelp"
+                required="required"
+              />
+            </div>
+            <div class="col mb-3">
+              <label for="inputBox" id="inputLabel" class="form-label">
+                Phone</label
+              >
+              <input
+                type="text"
+                class="form-control border-0"
+                id="inputBox"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 mb-0 mb-md-4">
+            <div class="department-selection col mb-3">
+              <label for="recognizeUsInput" class="form-label"
+                >Departments</label
+              >
+              <select
+                class="form-select department-select rounded-0"
+                aria-label="Default select example"
+                id="recognizeUsInput"
+                required="required"
+              >
+                <option class="fs-5 my-2" selected>Choose a department</option>
+                <option class="fs-5 my-2" value="AESTHETICS">AESTHETICS</option>
+                <option class="fs-5 my-2" value="PLASTIC SURGERY">
+                  PLASTIC SURGERY
+                </option>
+                <option class="fs-5 my-2" value="SKIN CARE">SKIN CARE</option>
+                <option class="fs-5 my-2" value="ANDROLOGY">ANDROLOGY</option>
+                <option class="fs-5 my-2" value="GYNECOLOGY">GYNECOLOGY</option>
+                <option class="fs-5 my-2" value="HAIR TRANSPLANT">
+                  HAIR TRANSPLANT
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3 mb-0 mb-md-4">
+            <label for="textareaInput" class="form-label">Details</label>
+            <textarea
+              class="form-control border-0"
+              id="textareaInput"
+              rows="5"
+              placeholder="Type your message here..."
+              required="required"
+            ></textarea>
+          </div>
+
+          <div class="form-check text-black d-flex justify-content-center">
+            <input
+              class="form-check-input text-black mx-3"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck">
+              I want to subscribe to the newsletter
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+
+          <button
+            class="d-flex align-items-center btn-submit text-decoration-none"
+            title="Submit"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
+    <!-- End Aesthetic Section  -->
 
     <!-- Whats APP Icon  -->
     <div
@@ -278,7 +408,7 @@
     </div>
 
     <!-- Footer  -->
-    <footer class="text-center border-top border-light mt-5 pt-5">
+    <footer class="text-center border-top border-light pt-5">
       <h6 style="color: rgb(202, 171, 119); letter-spacing: 8px" class="mb-4">
         CONTACT US
       </h6>
@@ -357,10 +487,31 @@
         ></a>
       </div>
     </footer>
-
+    <!-- End Footer  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
-
-    <script
+    <script>
+      var selectBox = document.getElementById("selectBox");
+      var inputBox = document.getElementById("inputBox");
+      var inputLabel = document.getElementById("inputLabel");
+    
+      selectBox.addEventListener("change", function () {
+        var selectedValue = selectBox.value; // Move inside the event listener
+    
+        if (selectedValue === "UAE") {
+          inputBox.style.display = "block";
+          inputLabel.style.display = "block";
+          inputBox.placeholder = "E.g., 050"; // Use placeholder property
+        } else if (selectedValue === "INTER") {
+          inputBox.style.display = "block";
+          inputLabel.style.display = "block";
+          inputBox.placeholder = "E.g., +971"; // Use placeholder property
+        } else {
+          inputBox.style.display = "none";
+          inputLabel.style.display = "none";
+        }
+      });
+    </script>
+    
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
