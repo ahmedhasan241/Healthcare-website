@@ -6,6 +6,8 @@
   object-fit: cover;
   object-position: center center;
   background-attachment: fixed;
+  width: 100%;
+  overflow: hidden;
   padding-bottom: 75px;
 }
 
@@ -170,6 +172,18 @@
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+  }
+  .department-selection .form-select {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px 15px;
+    border-bottom: 1px solid #caab77 !important;
+  }
+  .number-selection .number-select {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px 10px;
+    border: 1px solid #caab77 !important;
   }
 }
 @media (max-width: 500px) {
