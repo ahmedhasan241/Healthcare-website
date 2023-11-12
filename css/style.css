@@ -51,7 +51,7 @@ html {
 .plastic-surgery-list {
   background-color: black;
   position: absolute;
-  top: 66.5px;
+  top: 65.5px;
   left: 0px;
   padding: 5px 0;
   z-index: 100;
@@ -80,7 +80,7 @@ html {
 .aesthetics-list {
   background-color: black;
   position: absolute;
-  top: 66.5px;
+  top: 65.5px;
   left: -33px;
   z-index: 100;
   cursor: pointer;
@@ -109,7 +109,7 @@ html {
 .contact-list {
   background-color: black;
   position: absolute;
-  top: 66.5px;
+  top: 65.5px;
   right: 0;
   z-index: 100;
   cursor: pointer;
