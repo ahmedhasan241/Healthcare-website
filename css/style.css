@@ -767,7 +767,7 @@ html {
   background-color: black;
   padding-top: 60px;
   transition: 0.5s;
-  z-index: 400;
+  z-index: 4000;
   overflow: auto;
 }
 
@@ -793,7 +793,7 @@ html {
   position: relative;
   background-color: transparent;
   border: none;
-  z-index: 500;
+  z-index: 5000;
 }
 
 .hamburger:focus {
