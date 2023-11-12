@@ -43,8 +43,22 @@ dropdown.addEventListener("click", () => {
 
 list.addEventListener("click", (e) => {
   const img = e.target.querySelector("img");
-
   selectedImg.src = img.src;
+});
+
+const dropdownMobile = document.querySelector(".drop-down-mobile");
+
+const listMobile = document.querySelector(".list-mobile");
+
+const selectedImgMobile = document.querySelector(".selectedImg-mobile");
+
+dropdownMobile.addEventListener("click", () => {
+  listMobile.classList.toggle("show");
+});
+
+listMobile.addEventListener("click", (e) => {
+  const img = e.target.querySelector("img");
+  selectedImgMobile.src = img.src;
 });
 
 const card = document.querySelector(".video-contain");
@@ -95,4 +109,56 @@ function closeNav() {
   document.getElementById("mySide-nav").classList.remove("show-nav");
   const overlay = document.getElementById("overlay");
   overlay.style.display = "none";
+}
+
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  var burgerMenu = document.getElementById("burger-menu");
+  var body = document.body;
+
+  if (menu.style.right === "-300px") {
+    menu.style.right = "0";
+    burgerMenu.classList.add("open");
+    body.style.overflow = "hidden";
+  } else {
+    menu.style.right = "-300px";
+
+    burgerMenu.classList.remove("open");
+    body.style.overflow = "auto";
+  }
+}
+
+function showAesthetic() {
+  var x = document.getElementById("dropdown-aesthetic");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function showMedia() {
+  var x = document.getElementById("dropdown-media");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showAesthetic() {
+  var x = document.getElementById("dropdown-aesthetic");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showContact() {
+  var x = document.getElementById("dropdown-contact");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

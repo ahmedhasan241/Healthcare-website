@@ -32,7 +32,7 @@
   </head>
   <body class="bg-black">
     <!-- Nav Bar  -->
-    <div class="d-none d-lg-block">
+    <div class="d-none d-xl-block">
       <nav style="border-top: 1px inset rgb(202, 171, 119)" class="mt-2 d-flex">
         <div class="drop-down h-75 my-auto">
           <div class="wrapper">
@@ -53,7 +53,7 @@
           style="height: 65px"
         >
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ourteam.html">OUR TEAM</a>
@@ -82,7 +82,7 @@
                 <a href="aesthetic.html">LASER TREATMENTS </a>
               </div>
               <div class="aesthetics-item text-center">
-                <a href="aesthetic.html"> FACIALS</a>
+                <a href="skincare.html"> FACIALS</a>
               </div>
               <div class="aesthetics-item text-center">
                 <a href="aesthetic.html"> IV DRIP THERAPY</a>
@@ -101,22 +101,20 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">HAIR TRANSPLANT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link appointment-nav-link" href="appointment.html"
-              >CONTACTS</a
-            >
-            <!-- <div class="appointment-nav-list">
-              <div class="text-center">
-                <a href="appointment.html">Appointment</a>
+          <li class="nav-item contact-nav-link">
+            <a class="nav-link" href="#footer">CONTACTS</a>
+            <div class="contact-list">
+              <div class="contact-item text-center">
+                <a href="appointment.html">APPOINTMENT</a>
               </div>
-            </div> -->
+            </div>
           </li>
         </ul>
       </nav>
     </div>
     <!-- moblie nav -->
     <nav
-      class="bg-black d-lg-none d-flex align-items-center justify-content-evenly"
+      class="bg-black d-xl-none d-flex align-items-center justify-content-around"
       style="height: 10vh; border-top: 1px solid black"
     >
       <img
@@ -129,105 +127,89 @@
         fetchpriority="high"
       />
 
-      <button
-        class="btn align-self-center my-5"
-        style="color: #dcbc84; font-size: 27px"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#staticBackdrop"
-        aria-controls="staticBackdrop"
-      >
-        ☰
-      </button>
+      <div id="burger-menu" class="hamburger" onclick="toggleMenu()">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </div>
 
-      <div
-        class="offcanvas offcanvas-end bg-black"
-        data-bs-backdrop="static"
-        tabindex="-1"
-        id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel"
-      >
-        <div class="offcanvas-header">
-          <h6 class="offcanvas-title" id="staticBackdropLabel"></h6>
-          <button
-            type="button"
-            class="btn-close mx-4 mt-1"
-            data-bs-dismiss="offcanvas"
-          >
-            <i class="fa-solid fa-xmark fs-1" style="color: #dcbc84"></i>
-          </button>
-        </div>
-        <div class="offcanvas-body text-start" style="color: #dcbc84">
-          <a href="#" class="list-group-item active mt-2 mx-auto">
-            The current link item
-          </a>
-          <a href="#" class="list-group-item mt-2 mx-auto"
-            >A second link item</a
-          >
-          <a href="#" class="list-group-item mt-2 mx-auto">A third link item</a>
-          <a href="#" class="list-group-item mt-2" mt-2 mx-auto
-            >A fourth link item</a
-          >
-          <div
-            class="accordion-item mt-2 mx-auto text-center items-content-center"
-          >
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-                style="color: #dcbc84"
-              >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <ul class="list-group nav flex flex-row">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">OUR TEAM</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">PLASTIC SURGERY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">AESTHETICS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">GYNECOLOGY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ANDROLOGY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">HAIR TRANSPLANT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTS</a>
-                  </li>
-                </ul>
-                <ul
-                  class="nav flex flex-row justify-content-start align-items-start"
-                ></ul>
-              </div>
+      <div id="menu">
+        <div class="drop-down-mobile my-auto" style="margin: 0 75px">
+          <div class="wrapper-mobile">
+            <img src="/images/USA.png" alt="" class="selectedImg-mobile" />
+          </div>
+          <i class="fa-solid fa-chevron-down arrow-mobile"></i>
+          <div class="list-mobile">
+            <div class="item-mobile" value="English">
+              <img src="/images/USA.png" alt="" />
+            </div>
+            <div class="item-mobile" value="Arabic">
+              <img src="/images/ARE.png" alt="" />
             </div>
           </div>
-          <a href="#" class="list-group-item mt-2 mx-auto"
-            >A disabled link item</a
-          >
+        </div>
+        <div>
+          <a href="index.html">HOME</a>
+          <a href="ourteam.html">OUR TEAM</a>
+          <a href="ourclinic.html">PLASTIC SURGERY</a>
+
+          <span class="d-flex">
+            <a href="aesthetic.html" class="">AESTHETICS </a>
+
+            <i
+              onclick="showAesthetic()"
+              type="button"
+              class="fa-solid fa-chevron-down ms-5 my-auto text-white"
+            ></i
+          ></span>
+
+          <div id="dropdown-aesthetic" class="dropdown-aesthetic">
+            <a href="aesthetic.html" class="text-white fs-6">
+              AESTHETIC DERMATOLOGY</a
+            >
+            <a href="aesthetic.html" class="text-white fs-6"
+              >LASER TREATMENTS
+            </a>
+            <a href="skincare.html" class="text-white fs-6"> FACIALS</a>
+            <a href="aesthetic.html" class="text-white fs-6">
+              IV DRIP THERAPY</a
+            >
+            <a href="aesthetic.html" class="text-white fs-6"> OUR MACHINES</a>
+          </div>
+          <a href="gynecology.html">GYNECOLOGY</a>
+          <a href="about.html">HAIR TRANSPLANT</a>
+          <span class="d-flex">
+            <a href="">MEDIA </a>
+            <i
+              onclick="showMedia()"
+              class="fa-solid fa-chevron-down ms-5 my-auto text-white"
+            ></i
+          ></span>
+
+          <div id="dropdown-media" class="dropdown-media">
+            <a href="#" class="text-white fs-6"> VIDEO</a>
+            <a href="#" class="text-white fs-6">GALLERY </a>
+
+            <a href="#" class="text-white fs-6"> BLOG</a>
+          </div>
+          <a href="#">OUR MACHINES</a>
+          <span class="d-flex">
+            <a href="">CONTACT </a>
+            <i
+              onclick="showContact()"
+              class="fa-solid fa-chevron-down ms-5 my-auto text-white"
+            ></i
+          ></span>
+
+          <div id="dropdown-contact" class="dropdown-contact">
+            <a href="appointment.html" class="text-white fs-6">APPOINTMENT</a>
+          </div>
         </div>
       </div>
+
+      <!-- Mobile Menu -->
     </nav>
+    <!-- End Nav  -->
 
     <!-- hero section  -->
 
@@ -241,14 +223,14 @@
           alt=""
         />
       </div>
-      <div class="book-btn">
+      <div class="book-btn" style="scroll-behavior: smooth">
         <a href="#appointment">
           <button type="button" class="btn rounded-0 mt-2">
             BOOK APPOINTMENT
           </button></a
         >
       </div>
-      <a href="#stay-section">
+      <a href="#stay-section" style="scroll-behavior: smooth">
         <i
           class="fa-solid fa-chevron-down fa-lg"
           style="color: #caab77; font-size: 28px"
@@ -1047,7 +1029,7 @@
       ></a>
     </div>
     <!-- Footer  -->
-    <footer class="text-center border-top border-light mt-5 pt-5">
+    <footer id="footer" class="text-center border-top border-light pt-5">
       <h6 style="color: rgb(202, 171, 119); letter-spacing: 8px" class="mb-4">
         CONTACT US
       </h6>
@@ -1081,7 +1063,7 @@
 
       <h4 class="text-white">Subscribe to get our latest updates</h4>
       <form action="">
-        <div class="input-group border-0">
+        <div class="input-group border-0 d-none d-sm-flex">
           <input
             type="text"
             class="form-control p-3 border-0"
@@ -1090,6 +1072,32 @@
           />
 
           <button class="input-group-btn text-white" type="submit">
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="input-group input-group-mobile d-block d-sm-none"
+          style="width: 100%"
+        >
+          <input
+            type="text"
+            class="mobile-input form-control p-3 border-0"
+            placeholder="Enter your email here*"
+            style="
+              background-color: black;
+              color: gray;
+              transition: all 0.2s ease-in-out;
+              border-radius: 0;
+              width: 95%;
+              margin: 0 auto;
+              z-index: 0;
+            "
+            required
+          />
+          <button
+            class="input-group-btn button-mobile text-white"
+            type="submit"
+          >
             Subscribe
           </button>
         </div>
