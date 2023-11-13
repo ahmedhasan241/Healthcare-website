@@ -28,6 +28,7 @@
     />
     <link rel="stylesheet" href="css/andrology.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Andrology | Highness Clinic | Dubai</title>
     <script src="js/script.js" defer></script>
   </head>
@@ -119,6 +120,11 @@
       style="height: 10vh; border-top: 1px solid black"
     >
       <img
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="fade-zoom-in"
+        data-aos-duration="1100"
+        data-aos-once="true"
         src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1045,h_215,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
         alt="Dubai Plastic Surgery - Highnessclinics"
         style="width: 75%; height: 100%"
@@ -214,7 +220,16 @@
 
     <!-- Andrology Section  -->
     <div class="andrology-section">
-      <h1 class="andrology-title">ANDROLOGY</h1>
+      <h1 class="andrology-title">
+        <span
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1100"
+          data-aos-once="true"
+          >ANDROLOGY</span
+        >
+      </h1>
       <div class="row row-cols-1 row-cols-lg-2 andrology-contain">
         <div class="col">
           <img
@@ -223,9 +238,23 @@
             alt=""
           />
         </div>
-        <div class="col andrology-text">
-          <h2>ANDROLOGY</h2>
-          <p>
+        <div class="col andrology-text" style="overflow: hidden">
+          <h2
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in"
+            data-aos-duration="1100"
+            data-aos-once="true"
+          >
+            ANDROLOGY
+          </h2>
+          <p
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             Empowering male vitality and well-being, our distinguished Andrology
             department at Highness Clinics Dubai is a sanctuary for
             comprehensive men's health solutions. Our expert Andrologists
@@ -248,14 +277,7 @@
     <!-- End Andrology Section  -->
 
     <!-- Whats APP Icon  -->
-    <div
-      id="comp-kjsnxgso"
-      class="whatspp-icon"
-      style="visibility: inherit"
-      data-angle="0"
-      data-angle-style-location="style"
-      data-screen-in-hide="done"
-    >
+    <div id="comp-kjsnxgso" class="whatspp-icon" style="visibility: inherit">
       <a
         data-testid="linkElement"
         href="https://wa.link/oawtxf"
@@ -395,5 +417,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

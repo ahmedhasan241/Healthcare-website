@@ -28,6 +28,7 @@
     />
     <link rel="stylesheet" href="css/appointment.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>
       Book An Appointment | Dr. Firas Hamdan | Highness Clinic In Dubai
     </title>
@@ -121,6 +122,11 @@
       style="height: 10vh; border-top: 1px solid black"
     >
       <img
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="fade-zoom-in"
+        data-aos-duration="1100"
+        data-aos-once="true"
         src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1045,h_215,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
         alt="Dubai Plastic Surgery - Highnessclinics"
         style="width: 75%; height: 100%"
@@ -218,7 +224,15 @@
     <div class="appointment-section">
       <div class="appointment-header">
         <div class="header-contain">
-          <h6>REQUEST AN APPOINTMENT</h6>
+          <h6
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1100"
+            data-aos-once="true"
+          >
+            REQUEST AN APPOINTMENT
+          </h6>
           <p class="mx-0 mx-sm-4">
             Requesting an appointment is easy. Simply provide your information
             in the form below and we will contact you within 24 hours.
@@ -531,6 +545,10 @@
         dropdown.style.display =
           dropdown.style.display === "block" ? "none" : "block";
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

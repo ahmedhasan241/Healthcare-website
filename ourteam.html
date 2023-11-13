@@ -26,8 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/ourteam.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Highness Clinic - Top Plastic Surgeons in Dubai</title>
     <script src="js/script.js" defer></script>
   </head>
@@ -118,7 +120,12 @@
       class="bg-black d-xl-none d-flex align-items-center justify-content-around"
       style="height: 10vh; border-top: 1px solid black"
     >
-      <img
+      <img 
+      data-aos="zoom-in"
+      data-aos-offset="300"
+      data-aos-easing="fade-zoom-in"
+      data-aos-duration="1100"
+      data-aos-once="true"
         src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1045,h_215,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
         alt="Dubai Plastic Surgery - Highnessclinics"
         style="width: 75%; height: 100%"
@@ -213,11 +220,24 @@
     <!-- End Nav  -->
 
     <!-- Oure Team Section  -->
-    <div class="team-section">
-      <h5 class="team-title">WELCOME TO HIGHNESS CLINICS</h5>
+    <div class="team-section" style="overflow: hidden;">
+      <h5 class="team-title"><span          
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1100"
+        data-aos-once="true"> WELCOME TO HIGHNESS CLINICS</span></h5>
       <div class="pt-4 team-content mb-4">
-        <h2 class="team-content-title">MEET THE FOUNDER!</h2>
-        <p>
+        <h2 class="team-content-title"             data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in"
+        data-aos-duration="1100"
+        data-aos-once="true">MEET THE FOUNDER!</h2>
+        <p         data-aos="fade-in"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1100"
+        data-aos-once="true">
           Highness Clinics was founded by Dr. Firas Hamdan who believes that
           happiness is derived from the satisfaction of staying young and
           beautiful forever, and this is what motivated him to pursue his career
@@ -455,6 +475,7 @@
           <div class="col my-2 my-md-5">
             <div
               class="card team-card first-card text-bg-dark border-0 rounded-0"
+              data-aos="fade-in"
             >
               <img
                 src="https://static.wixstatic.com/media/596b7e_3097fa32fd454431a90e5a0b983630d3~mv2.jpg/v1/crop/x_1,y_0,w_1078,h_1467/fill/w_391,h_533,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Dr%20Paulo%20Michelscroped.jpg"
@@ -500,7 +521,39 @@
 
     <!-- End Oure Team Section  -->
 
-
+    <!-- Whats APP Icon  -->
+    <div
+      id="comp-kjsnxgso"
+      class="whatspp-icon"
+      style="visibility: inherit"
+      data-angle="0"
+      data-angle-style-location="style"
+      data-screen-in-hide="done"
+    >
+      <a
+        data-testid="linkElement"
+        href="https://wa.link/oawtxf"
+        target="_blank"
+        class="j7pOnl"
+        ><wow-image
+          id="img_comp-kjsnxgso"
+          class="HlRz5e BI8PVQ"
+          data-image-info='{"containerId":"comp-kjsnxgso","displayMode":"fill","targetWidth":83,"targetHeight":78,"isLQIP":false,"imageData":{"width":105,"height":105,"uri":"7f5657_d66a75bbb84c4ccfbc20a0ba189f1247~mv2.png","name":"wa icon-01.png","displayMode":"fill","crop":{"x":0,"y":2,"width":105,"height":101,"svgId":"909695c1e003409ba70b5561666c7c4d.svg"}}}'
+          data-bg-effect-name=""
+          data-has-ssr-src=""
+          data-src="https://static.wixstatic.com/media/7f5657_d66a75bbb84c4ccfbc20a0ba189f1247~mv2.png/v1/crop/x_0,y_2,w_105,h_101/fill/w_104,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/wa%20icon-01.png"
+          ><img
+            src="https://static.wixstatic.com/media/7f5657_d66a75bbb84c4ccfbc20a0ba189f1247~mv2.png/v1/crop/x_0,y_2,w_105,h_101/fill/w_104,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/wa%20icon-01.png"
+            alt="wa icon-01.png"
+            style="width: 83px; height: 78px; object-fit: cover"
+            width="83"
+            height="78"
+            srcset="
+              https://static.wixstatic.com/media/7f5657_d66a75bbb84c4ccfbc20a0ba189f1247~mv2.png/v1/crop/x_0,y_2,w_105,h_101/fill/w_104,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/wa%20icon-01.png
+            "
+            fetchpriority="high" /></wow-image
+      ></a>
+    </div>
     
     <!-- Footer  -->
     <footer id="footer" class="text-center border-top border-light pt-5">
@@ -610,13 +663,15 @@
     </footer>
     <!-- End Footer  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
-    <script>
-
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+
   </body>
 </html>

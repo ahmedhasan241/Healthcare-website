@@ -28,6 +28,7 @@
     />
     <link rel="stylesheet" href="css/skincare.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Andrology | Highness Clinic | Dubai</title>
     <script src="js/script.js" defer></script>
   </head>
@@ -119,6 +120,11 @@
       style="height: 10vh; border-top: 1px solid black"
     >
       <img
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="fade-zoom-in"
+        data-aos-duration="1100"
+        data-aos-once="true"
         src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1045,h_215,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
         alt="Dubai Plastic Surgery - Highnessclinics"
         style="width: 75%; height: 100%"
@@ -214,7 +220,17 @@
 
     <!-- Skin Care Section  -->
     <div class="skin-section">
-      <h1 class="skin-title">DUBAI SKIN CARE</h1>
+      <h1 class="skin-title">
+        <span
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1100"
+          data-aos-once="true"
+        >
+          DUBAI SKIN CARE
+        </span>
+      </h1>
       <div class="row skin-contain">
         <div class="col-lg-6 d-block d-lg-none">
           <img
@@ -226,8 +242,23 @@
         </div>
         <div class="col-lg-6 skin-text">
           <div class="card-body">
-            <h2 class="fw-medium">SilkPeel HydraFacial</h2>
-            <p>
+            <h2
+              class="fw-medium"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in"
+              data-aos-duration="1100"
+              data-aos-once="true"
+            >
+              SilkPeel HydraFacial
+            </h2>
+            <p
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
               SilkPeel Dermal Infusion Facial Cleaning is an advanced,
               non-invasive 3-in-1 microdermabrasion or exfoliation treatment. It
               is specially designed to provide topical solutions to your skin
@@ -260,18 +291,36 @@
         </div>
         <div class="col-lg-6 my-0 my-lg-5 skin-text">
           <div class="card-body">
-            <h2 class="fw-medium">HydraCool Plus</h2>
-            <p>
-              HydraCool Plus Multi-functional device combination of 8 in 1 skin
-              and scalp treatment system 8 applicators for optimum skin care
-            </p>
-            <ul>
-              <li>Oily, combinated or acne prone skin</li>
-              <li>Pigmented, aged and dry skin</li>
-              <li>Pigmented, tired skin or the skin to be brightened</li>
-              <li>Loose & aged skin or scalp</li>
-            </ul>
-
+            <h2
+              class="fw-medium"
+              class="fw-medium"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in"
+              data-aos-duration="1100"
+              data-aos-once="true"
+            >
+              HydraCool Plus
+            </h2>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <p>
+                HydraCool Plus Multi-functional device combination of 8 in 1
+                skin and scalp treatment system 8 applicators for optimum skin
+                care
+              </p>
+              <ul>
+                <li>Oily, combinated or acne prone skin</li>
+                <li>Pigmented, aged and dry skin</li>
+                <li>Pigmented, tired skin or the skin to be brightened</li>
+                <li>Loose & aged skin or scalp</li>
+              </ul>
+            </div>
             <div class="card-footer text-center">
               <button type="button" class="skin-btn btn rounded-0">
                 BOOK AN APPOINTMENT
@@ -432,5 +481,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
